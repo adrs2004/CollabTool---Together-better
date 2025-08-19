@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="bg-indigo-950 text-gray-300 border-t border-indigo-800">
@@ -21,10 +23,18 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-white mb-2">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li className="hover:text-indigo-400 transition"><a href="/">Home</a></li>
-              <li className="hover:text-indigo-400 transition"><a href="/repositories">Repositories</a></li>
-              <li className="hover:text-indigo-400 transition"><a href="/projects">Projects</a></li>
-              <li className="hover:text-indigo-400 transition"><a href="/pull-requests">Pull Requests</a></li>
+              <li className="hover:text-indigo-400 transition">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="hover:text-indigo-400 transition">
+                <Link to="/repositories">Repositories</Link>
+              </li>
+              <li className="hover:text-indigo-400 transition">
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li className="hover:text-indigo-400 transition">
+                <Link to="/pull-requests">Pull Requests</Link>
+              </li>
             </ul>
           </div>
         </div>
