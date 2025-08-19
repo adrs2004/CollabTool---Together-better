@@ -23,7 +23,7 @@ export default function App() {
         <Routes>
           <Route
             path="/"
-            element={isAuthenticated ? <Navigate to="/" /> : <Auth />}
+            element={isAuthenticated ? <Navigate to="/home" /> : <Auth />}
           />
           <Route
             path="/home"
