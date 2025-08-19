@@ -18,7 +18,6 @@ export default function Auth() {
       if (email === "user@gmail.com" && password === "user123") {
         localStorage.setItem("isAuthenticated", "true");
         navigate("/");
-        window.location.reload();
       } else {
         throw new Error("Invalid credentials. Please try again.");
       }
@@ -58,4 +57,5 @@ export default function Auth() {
     </div>
   );
 }
+
 
